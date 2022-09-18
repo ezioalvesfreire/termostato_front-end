@@ -1,9 +1,21 @@
+import "./App.css";
+
+import ActuatorComponent from "./components/ActuatorComponent";
+import DhtComponent from "./components/DhtComponent";
+import TopComponent from "./components/TopComponent";
+
+
 function App() {
   return (
-    <div className="conteiner">
-      <h1 className="title">Termostato IOT</h1>
+    <div className="conteiner">  
+      <div className="containerTop">
+       <TopComponent/>
+      </div>
       <div className="containerDHT">
-
+        <DhtComponent/>
+      </div>
+      <div>
+        <ActuatorComponent/>
       </div>
     </div>
   );

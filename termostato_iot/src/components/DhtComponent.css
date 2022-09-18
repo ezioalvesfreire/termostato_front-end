@@ -1,0 +1,40 @@
+.sensorcomponent{
+
+}
+.sensorcomponent .sensores{
+    background: #FFF;
+    float: left;
+    width: calc(50% - 26px );
+    border: solid 1px #CCC ;
+    padding: 21px;
+    margin: 13px;
+    border-radius: 6px;
+}
+.sensorcomponent .sensores div{
+    float: left;
+    width: 35%;
+    height: 250px;    
+}
+.sensorcomponent .sensores.thermometer div {
+    background: url("../images/thermometer.png") no-repeat 50%;               
+    background-size: 80%;
+
+
+}
+.sensorcomponent .sensores.humidity div {
+    background: url("../images/humidity.png") no-repeat 50%;               
+    background-size: 80%;
+
+}
+.sensorcomponent .sensores label {
+    float: left;
+    margin: 106px 0 0 157px;
+    font-weight: bolder;
+    font-size: 35px;
+
+}
+.sensorcomponent .sensores span {
+    float: right;
+    font-size: 22px;
+    margin: 0 -275px 0 -1000px
+}
