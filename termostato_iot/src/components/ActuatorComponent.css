@@ -2,19 +2,19 @@
    
 
 }
-.statusActuator .button.off, .statusActuator .button.on{
+.statusActuator .list-group-item.off, .statusActuator .list-group-item.on{
 
     padding: 21px;
     margin: 13px;
     border-radius: 6px;
     font-weight: bolder;
 }
-.statusActuator .button.off{
+.statusActuator .list-group-item.off{
 
      background: rgb(155, 153, 153) url("../images/power-off.png") no-repeat calc(100% - 17px) 50%;
      background-size: 3.5%;
 }
-.statusActuator .button.on{
+.statusActuator .list-group-item.on{
 
     background: rgb(155, 153, 153) url("../images/power-on.png") no-repeat calc(100% - 17px) 50%;
     background-size: 3.5%;
