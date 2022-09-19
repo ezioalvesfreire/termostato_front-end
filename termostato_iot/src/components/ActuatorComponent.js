@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from 'reactstrap';
 import './ActuatorComponent.css';
+import { Container } from 'reactstrap';
 
 const ActuatorComponent = () => {
     const handleClick = () => {
@@ -8,13 +9,16 @@ const ActuatorComponent = () => {
     };
 
     return (
-        <div className="actuatorcomponent">                   
-           {/* <button onClick={handleClick}>click</button> */}
+        <Container className="actuatorcomponent">
+            {/* <button onClick={handleClick}>click</button> */}
+
             <div className="statusActuator">
-               <div className="button off">Atuador-01</div> 
-               <div className="button on">Atuador-02</div>           
-            </div>                 
-        </div>
+                <ul className="list-group">
+                <a href="#" onClick={handleClick}><li className="list-group-item off">Atuador-01</li></a>
+                <a href="#" onClick={handleClick}><li className="list-group-item on">Atuador-02</li></a>                   
+                </ul>                
+            </div>
+        </Container>
 
     );
 }

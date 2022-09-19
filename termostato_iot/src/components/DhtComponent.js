@@ -1,30 +1,37 @@
 import "./DhtComponent.css";
 import humidity from '../images/humidity.png';
 import temperature from '../images/thermometer.jpg';
+import { Container } from "reactstrap";
+
+
 
 const DhtComponent = () => {
 
+    let temperature = 30;
+    let temperaturef = 86;
+    let humidity = 60;
+
     return (
-        <div className="sensorcomponent">   
+        <Container className="sensorcomponent">   
             <div className="sensores humidity">
                 <div>
                     <label>
-                        30%
+                        {humidity}%
                     </label>
                 </div>
             </div>
             <div className="sensores thermometer">
                 <div>
                     <span>
-                        78°F
+                        {temperaturef}°F
                     </span>
                     <label>
-                        25°C
+                        {temperature}°C
                     </label>
                 </div>
             </div>
             <div className="both"></div>
-        </div>
+        </Container>
     );
 }
 
